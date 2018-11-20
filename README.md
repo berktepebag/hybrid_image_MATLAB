@@ -1,4 +1,4 @@
-# hybrid_image_MATLAB
+# Creating Hybrid Images with Image Filtering Using MATLAB
 
 Creating hybrid images with image filtering. Gaussian filter used to create Low and high frequiency images.
 
@@ -46,13 +46,34 @@ end
 
 Hybrid image generator takes in 2 images and cutoff_frequency. 'cutoff_frequency' is the standard deviation, in pixels, of the Gaussian blur that will remove high frequencies. Tried 3 different values, 3,5,7.
 
-### cutoff_frequency:3
+### cutoff_frequency: 3-5-7
 
-<img width="200" alt="High Frequency Image cutoff_frequency 3" src="/imgs/high_frequencies_3.JPG">
-<img width="200" alt="High Frequency Image cutoff_frequency 3" src="/imgs/high_frequencies_5.JPG">
-<img width="200" alt="High Frequency Image cutoff_frequency 3" src="/imgs/high_frequencies_7.JPG">
+#### High Frequency Images
+
+<img width="200" alt="High Frequency Image cutoff_frequency 3" src="/imgs/high_frequencies_3.jpg"><img width="200" alt="High Frequency Image cutoff_frequency 5" src="/imgs/high_frequencies_5.jpg">
+<img width="200" alt="High Frequency Image cutoff_frequency 7" src="/imgs/high_frequencies_7.jpg">
+
+As the cutoff_frequency increases from 3 to 7, cat image becomes sharper. To achieve this solution, subtracted low frequency image from the original image.
+
+#### Low Frequency Images
+
+<img width="200" alt="low Frequency Image cutoff_frequency 3" src="/imgs/low_frequencies_3.jpg"><img width="200" alt="low Frequency Image cutoff_frequency 5" src="/imgs/low_frequencies_5.jpg">
+<img width="200" alt="low Frequency Image cutoff_frequency 7" src="/imgs/low_frequencies_7.jpg">
+
+As the cutoff_frequency increases from 3 to 7, dog image becomes more blur.
+
+#### Hybrid Images
+
+<img width="200" alt="Hybrid Image cutoff_frequency 3" src="/imgs/hybrid_image_3.jpg"><img width="200" alt="Hybrid Image cutoff_frequency 5" src="/imgs/hybrid_image_5.jpg">
+<img width="200" alt="Hybrid Image cutoff_frequency 7" src="/imgs/hybrid_image_7.jpg">
+
+As cutoff_frequency increases low frequency images becomes less visible while high frequency images becomes more visible in the hybrid image.
 
 
+#### Hybrid Image Scales
 
+<img width="600" alt="Hybrid Image cutoff_frequency 3" src="/imgs/hybrid_image_scales_3.jpg">
+<img width="600" alt="Hybrid Image cutoff_frequency 5" src="/imgs/hybrid_image_scales_5.jpg">
+<img width="600" alt="Hybrid Image cutoff_frequency 7" src="/imgs/hybrid_image_scales_7.jpg">
 
-
+From scaling hybrid images it can be seen that when cutoff_frequency is 5, selected cat and dog images blends well. 
